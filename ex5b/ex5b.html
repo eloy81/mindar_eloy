@@ -11,6 +11,8 @@
           <img id="cara" src="6.jpg" />            
           <img id="bicicletes" src="7.jpg" />
           <a-asset-item id="dado" src="dado_obj.glb"></a-asset-item>
+          <a-asset-item id="pelota" src="pelota.glb"></a-asset-item>
+
         </a-assets>
         <a-sky src="#fons"></a-sky>
         <a-plane position="0 0 0" rotation="-90 0 0" width="100" height="100" src="#texturaterra"></a-plane>
@@ -19,20 +21,43 @@
         </a-plane>
         <a-dodecahedron id="esmou" position="8 3 -6" rotation="0 30 0" radius="3" src="#bicicletes">
         </a-dodecahedron>
+        <a-gltf-model id="pelota3d" src="#pelota" position="4 2 -5" scale="1 1 1"></a-gltf-model>
         <a-gltf-model src="#dado" position="-4 3 0" scale="1 1 1" animation="property: rotation; to: 360 360 0; dur: 3000;dir: alternate; loop: true"> </a-gltf-model>
+        <button id="stopButton" style="position: absolute; top: 20px; left: 20px; z-index: 1; font-size: 18px;">Detener Animación</button>
         </a-scene>
         <script>
-          let unobjecte = document.querySelector("#esmou");
-
-          unobjecte.addEventListener("click", () => {            
-            unobjecte.setAttribute("animation", {
-              property: "position",
-              to: "8 20 -6",
-              dur: 10000,
-              dir: "alternate",
-              loop: true,
-              easing: "easeInOutQuad"
+          let pelota = document.querySelector("#pelota3d");
+        
+          pelota.addEventListener("click", () => {
+            pelota.setAttribute("animation", {
+              property: "rotation", 
+              to: "0 360 0",       
+              dur: 2000,          
+              loop: true,       
+              easing: "linear"     
             });
+          });
+        </script>
+        <script>
+          let pelota3d = document.querySelector("#pelota3d");
+          let stopButton = document.querySelector("#stopButton");
+        
+          // Animación para hacer que la pelota orbite alrededor de su posición
+          pelota.addEventListener("click", () => {
+            pelota.setAttribute("animation", {
+              property: "rotation",  // Rotación alrededor de su posición
+              to: "0 360 0",         // Gira 360 grados alrededor del eje Y
+              dur: 2000,             // Duración de la animación
+              loop: true,            // Repite la animación
+              easing: "linear"       // Movimiento constante
+            });
+          });
+        
+          // Detener las animaciones al hacer clic en el botón
+          stopButton.addEventListener("click", () => {
+            // Eliminar las animaciones aplicadas para detenerlas
+            pelota.removeAttribute("animation");
+            pelota.setAttribute("rotation", "0 0 0");  // Asegurarse de que no esté girando después de detenerlo
           });
         </script>
   </body>
