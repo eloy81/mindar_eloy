@@ -25,6 +25,20 @@
         <a-gltf-model src="#dado" position="-4 3 0" scale="1 1 1" animation="property: rotation; to: 360 360 0; dur: 3000;dir: alternate; loop: true"> </a-gltf-model>
         <button id="stopButton" style="position: absolute; top: 20px; left: 20px; z-index: 1; font-size: 18px;">Detener Animación</button>
         </a-scene>
+
+        <script>
+          let bicicletes = document.querySelector("#esmou");
+       
+          bicicletes.addEventListener("click", () => {            
+            bicicletes.setAttribute("animation", {
+              property: "position",
+              to: "8 20 -6",
+              dur: 3000,
+              loop: true,
+              dir: "alternate"
+            });
+          });
+        </script>
         <script>
           let pelota = document.querySelector("#pelota3d");
         
@@ -40,24 +54,32 @@
         </script>
         <script>
           let pelota3d = document.querySelector("#pelota3d");
+          let esmou = document.querySelector("#esmou");
           let stopButton = document.querySelector("#stopButton");
         
-          // Animación para hacer que la pelota orbite alrededor de su posición
           pelota.addEventListener("click", () => {
             pelota.setAttribute("animation", {
-              property: "rotation",  // Rotación alrededor de su posición
-              to: "0 360 0",         // Gira 360 grados alrededor del eje Y
-              dur: 2000,             // Duración de la animación
-              loop: true,            // Repite la animación
-              easing: "linear"       // Movimiento constante
+              property: "rotation",
+              to: "0 360 0",
+              dur: 2000,
+              loop: true,
+              easing: "linear"
             });
           });
-        
-          // Detener las animaciones al hacer clic en el botón
+          bicicletes.addEventListener("click", () => {            
+            bicicletes.setAttribute("animation", {
+              property: "position",
+              to: "8 20 -6",
+              dur: 3000,
+              loop: true,
+              dir: "alternate"
+            });
+          });
           stopButton.addEventListener("click", () => {
-            // Eliminar las animaciones aplicadas para detenerlas
+            bicicletes.removeAttribute("animation");
+            bicicletes.setAttribute("position", "8 3 -6");
             pelota.removeAttribute("animation");
-            pelota.setAttribute("rotation", "0 0 0");  // Asegurarse de que no esté girando después de detenerlo
+            pelota.setAttribute("rotation", "0 0 0");
           });
         </script>
   </body>
