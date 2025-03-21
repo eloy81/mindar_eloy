@@ -78,12 +78,33 @@
             });
           });
 
+          bicicletes.addEventListener("mouseenter", () => {            
+            bicicletes.setAttribute("animation", {
+              property: "rotation",
+              to: "0 180 0",
+              dur: 1000,
+              loop: true,
+              dir: "alternate"
+            });
+          });
+
+          bicicletes.addEventListener("mouseleave", () => {            
+            bicicletes.setAttribute("animation", {
+              property: "rotation",
+              to: "0 -180 0",
+              dur: 1000,
+              loop: true,
+              dir: "alternate"
+            });
+          });
+
           stopButton.addEventListener("click", () => {
             bicicletes.removeAttribute("animation");
             bicicletes.setAttribute("position", "8 3 -6");
             pelota.removeAttribute("animation");
             pelota.setAttribute("rotation", "0 0 0");
-          });
+          });          
+          
         </script>
 
         <script>
