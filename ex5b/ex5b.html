@@ -28,34 +28,8 @@
         </a-scene>
 
         <script>
-          let bicicletes = document.querySelector("#esmou");
-          bicicletes.addEventListener("click", () => {            
-            bicicletes.setAttribute("animation", {
-              property: "position",
-              to: "8 20 -6",
-              dur: 3000,
-              loop: true,
-              dir: "alternate"
-            });
-          });
-        </script>
-
-        <script>
           let pelota = document.querySelector("#pelota3d");
-          pelota.addEventListener("click", () => {
-            pelota.setAttribute("animation", {
-              property: "rotation", 
-              to: "0 360 0",       
-              dur: 2000,          
-              loop: true,       
-              easing: "linear"     
-            });
-          });
-        </script>
-
-        <script>
-          let pelota3d = document.querySelector("#pelota3d");
-          let esmou = document.querySelector("#esmou");
+          let bicicletes = document.querySelector("#esmou");
           let stopButton = document.querySelector("#stopButton");
 
           pelota.addEventListener("click", () => {
@@ -81,20 +55,19 @@
           bicicletes.addEventListener("mouseenter", () => {            
             bicicletes.setAttribute("animation", {
               property: "rotation",
-              to: "0 180 0",
+              to: "0 360 0",
               dur: 1000,
               loop: true,
-              dir: "alternate"
+              easing: "linear"
             });
           });
 
           bicicletes.addEventListener("mouseleave", () => {            
             bicicletes.setAttribute("animation", {
               property: "rotation",
-              to: "0 -180 0",
+              to: "360 0 0",
               dur: 1000,
               loop: true,
-              dir: "alternate"
             });
           });
 
