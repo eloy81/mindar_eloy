@@ -1,0 +1,11 @@
+Model Information:
+* title:	Teddy
+* source:	https://sketchfab.com/3d-models/teddy-1d928e3dc39142cdb0aac6ad79980eb7
+* author:	Mike Nixon (https://sketchfab.com/MichaelNixon)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Teddy" (https://sketchfab.com/3d-models/teddy-1d928e3dc39142cdb0aac6ad79980eb7) by Mike Nixon (https://sketchfab.com/MichaelNixon) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

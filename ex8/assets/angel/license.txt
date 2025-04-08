@@ -1,0 +1,11 @@
+Model Information:
+* title:	Angel-Z5
+* source:	https://sketchfab.com/3d-models/angel-z5-e5b83919bfe64416a042b95bc11533ab
+* author:	meepingking (https://sketchfab.com/meepingking)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Angel-Z5" (https://sketchfab.com/3d-models/angel-z5-e5b83919bfe64416a042b95bc11533ab) by meepingking (https://sketchfab.com/meepingking) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

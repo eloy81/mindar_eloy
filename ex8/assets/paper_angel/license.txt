@@ -1,0 +1,11 @@
+Model Information:
+* title:	Paper Angel
+* source:	https://sketchfab.com/3d-models/paper-angel-bc91ef30c08746b783a0322608f8b175
+* author:	MiwhyMiwh (https://sketchfab.com/MiwhyMiwh)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Paper Angel" (https://sketchfab.com/3d-models/paper-angel-bc91ef30c08746b783a0322608f8b175) by MiwhyMiwh (https://sketchfab.com/MiwhyMiwh) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

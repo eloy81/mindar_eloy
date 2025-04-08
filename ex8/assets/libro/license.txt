@@ -1,0 +1,11 @@
+Model Information:
+* title:	Libro
+* source:	https://sketchfab.com/3d-models/libro-0e1b2ad0b24645e1a390a0b3e97f801a
+* author:	Design Factory (https://sketchfab.com/SrColmillo)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Libro" (https://sketchfab.com/3d-models/libro-0e1b2ad0b24645e1a390a0b3e97f801a) by Design Factory (https://sketchfab.com/SrColmillo) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
