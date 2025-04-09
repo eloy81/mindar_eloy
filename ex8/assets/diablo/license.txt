@@ -1,0 +1,11 @@
+Model Information:
+* title:	Diablo Jimmy
+* source:	https://sketchfab.com/3d-models/diablo-jimmy-65c629c35f8242dbbac5e2a8180d460b
+* author:	SergioRafaelH (https://sketchfab.com/SergioRafaelH)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Diablo Jimmy" (https://sketchfab.com/3d-models/diablo-jimmy-65c629c35f8242dbbac5e2a8180d460b) by SergioRafaelH (https://sketchfab.com/SergioRafaelH) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Diablo skull fanart
+* source:	https://sketchfab.com/3d-models/diablo-skull-fanart-449e3001dd25435d9621fa9ce8f8c395
+* author:	Lucie Castiaux (https://sketchfab.com/kaseus)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Diablo skull fanart" (https://sketchfab.com/3d-models/diablo-skull-fanart-449e3001dd25435d9621fa9ce8f8c395) by Lucie Castiaux (https://sketchfab.com/kaseus) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

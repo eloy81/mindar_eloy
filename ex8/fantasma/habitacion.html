@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://castelletm12b.cat/build/assets/question.js" defer></script>  
+    <script>
+        AFRAME.registerComponent("mylink", {
+        init: function() {  
+         this.el.addEventListener("click", (e) => {              
+            window.location = this.data.href;      
+           })
+        }
+      })
+    </script>
+  </head>
+  <body>
+  <a-scene cursor="rayOrigin: mouse">
+    <a-assets>
+      <img id="imgSortida" src="/ex8/assets/entragroc.png" >
+      <img id="imgFantasma" src="/ex8/assets/fantasma.png" >
+      <img id="imgCasa" src="/ex8/assets/habitacion3.jpeg" >
+      <a-asset-item id="libro" src="/ex8/assets/libro/scene.gltf"></a-asset-item>
+      <a-asset-item id="libro2" src="/ex8/assets/libro_2/scene.gltf"></a-asset-item>
+      <a-asset-item id="oso" src="/ex8/assets/teddy/scene.gltf"></a-asset-item>
+    </a-assets>
+   
+    <a-entity camera look-controls wasd-controls="false">
+     <a-entity cursor="fuse: true; fuseTimeout: 2000"
+           position="10 0 -1"
+           geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+           material="color: red; shader: flat"
+           animation="property: components.material.material.color;
+                 type: color;
+                 to: white;
+                 dur: 1000;
+                 dir: alternate;
+                 loop: true">
+     </a-entity>
+    </a-entity>
+
+    <a-sky src="#imgCasa"></a-sky>
+
+    <a-sphere position="5 2 -5" radius="1"  src="#imgFantasma"
+              animation="property: rotation; dur: 2000;
+                     to: 0 360 0; loop: true">          
+    </a-sphere>
+
+    <a-entity question="30" gltf-model="#libro" position="-4 -5 -3" scale="0.1 0.1 0.1"></a-entity>
+    <a-entity question="33" gltf-model="#libro2" position="-4 -5 1" rotation="0 97 0" scale="0.5 0.5 0.5"></a-entity>
+    <a-entity question="38" gltf-model="#oso" position="2.6 -5 -6" rotation="0 -30 0" scale="0.03 0.03 0.03"></a-entity>
+    <a-plane question="22" position="1 0 5" src="#imgSortida" rotation="0 -180 0" transparent="true">
+    </a-plane>

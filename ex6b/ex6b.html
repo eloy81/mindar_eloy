@@ -2,16 +2,18 @@
   <head>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script>
-        AFRAME.registerComponent("mylink", {
-        init: function() {  
-         this.el.addEventListener("click", (e) => {              
-            window.location = this.data.href;      
-           })
+      AFRAME.registerComponent("redirect-on-animation-end", {
+        init: function() {
+          let el = this.el;
+          // Escuchamos el evento 'animationcomplete' para saber cuándo termina la animación
+          el.addEventListener('animationcomplete', () => {
+            // Redirigimos a otra página cuando termine la animación
+            window.location.href = "/ex8/cielo.html"; // Cambia la URL por la que desees
+          });
         }
-      })
+      });
     </script>
-
-
+    
   </head>
   <body>
   <a-scene cursor="rayOrigin: mouse">
@@ -47,7 +49,7 @@
                        to: 0 360 0; loop: true">          
        </a-sphere>
       <a-entity gltf-model="#avion" position="1 1 -5" rotation= "0 180 0" scale="0.02 0.02 0.02"
-                 animation="property: position; dur: 10000; from: -30 1 -270; to: 0 -2 -15; dir: alternate;">
+                 animation="property: position; dur: 10000; from: -30 1 -270; to: 0 -2 -15; dir: alternate;"redirect-on-animation-end>
       </a-entity>
       <a-plane position=" 31 1 -6" src="#imgSortida" rotation="0 -90 0"  transparent="true" mylink="href: /index.html"></a-plane>
       <a-plane position=" -36 2 4" src="#imgSortida" rotation="0 90 0"  transparent="true" mylink="href: /ex6/ex6.html"></a-plane>
