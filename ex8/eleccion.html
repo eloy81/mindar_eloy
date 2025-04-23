@@ -10,7 +10,7 @@
 <body>
     <a-scene cursor="rayOrigin: mouse">
         <a-assets>
-            <img id="fons" src="/ex8/assets/negro.jpg" />
+            <img id="fons" src="/assets/negro.jpg" />
         </a-assets>
         <a-sky src="#fons"></a-sky>
         
@@ -26,7 +26,7 @@
 
         function controlImatges(){
             segons=segons+1;
-            if (segons ==10)  window.location.href = "/ex8/calle.html";
+            if (segons ==5)  window.location.href = "calle.html";
           }
         setInterval(controlImatges, 1000); // Ejecuta cada segundo
       </script>

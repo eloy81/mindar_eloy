@@ -4,15 +4,14 @@
     <script src="https://castelletm12b.cat/build/assets/question.js" defer></script>  
   </head>
   <body>
-    <div id="mensaje">¡Jesús te dice hola!</div>
-
     <a-scene cursor="rayOrigin: mouse" raycaster="objects: .interactivo">
       <a-assets>
-        <img id="fons" src="/ex8/assets/cielo4.jpg" />
-        <img id="texturaterra" src="/ex8/assets/textura.jpg" />
-        <a-asset-item id="jesus" src="/ex8/assets/jesus/scene.gltf"></a-asset-item>
-        <a-asset-item id="gato_angel" src="/ex8/assets/gato_angel/scene.gltf"></a-asset-item>
-        <a-asset-item id="peper_angel" src="/ex8/assets/angel/scene.gltf"></a-asset-item>
+        <img id="fons" src="/assets/cielo4.jpg" />
+        <img id="texturaterra" src="/assets/textura.jpg" />
+        <a-asset-item id="jesus" src="/assets/jesus/scene.gltf"></a-asset-item>
+        <a-asset-item id="gato_angel" src="/assets/gato_angel/scene.gltf"></a-asset-item>
+        <a-asset-item id="peper_angel" src="/assets/angel/scene.gltf"></a-asset-item>
+        <audio id="audio" src="/assets/angelical.mp3"></audio>
       </a-assets>
 
       <a-sky src="#fons"></a-sky>
@@ -34,6 +33,7 @@
                 rotation="0 90 0"
                 question="19">
       </a-entity>
+      <a-entity id="sound" sound="src: #audio"></a-entity>
     </a-scene>
 
     <script>

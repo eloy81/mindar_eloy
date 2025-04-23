@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensaje 3D</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://castelletm12b.cat/build/assets/question.js" defer></script>  
+</head>
+<body>
+    <a-scene cursor="rayOrigin: mouse">
+        <a-assets>
+            <img id="fons" src="/assets/negro.jpg" />
+        </a-assets>
+        <a-sky src="#fons"></a-sky>
+        
+        <!-- Texto en 3D -->
+        <a-entity 
+            position="0 2 -3"
+            text="value: Ara intentare aturar l'avio.; align: center; width: 4; color: white;">
+        </a-entity>
+    </a-scene>
+    <script>
+        // Variables per gestionar els canvis
+        let segons = 0;
+
+        function controlImatges(){
+            segons=segons+1;
+            if (segons ==5)  window.location.href = "/fantasma/calle_lenta.html";
+          }
+        setInterval(controlImatges, 1000); // Ejecuta cada segundo
+      </script>
+</body>
+</html>

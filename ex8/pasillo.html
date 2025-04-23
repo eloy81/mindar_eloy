@@ -16,14 +16,12 @@
   <body>
   <a-scene cursor="rayOrigin: mouse">
     <a-assets>
-      <img id="imgSortida" src="/ex8/assets/entragroc.png" >
-      <img id="imgFantasma" src="/ex8/assets/fantasma.png" >
-      <img id="imgCasa" src="/ex8/assets/pasillo2.jpeg" >
-      <!--<a-asset-item id="dracula" src="/ex8/assets/dracula/scene.gltf"></a-asset-item>-->
+      <img id="imgSortida" src="/assets/entragroc.png" >
+      <img id="imgCasa" src="/assets/pasillo2.jpeg" >
+      <audio id="audio" src="/assets/cocina.mp3"></audio>
     </a-assets>
    
     <a-entity camera look-controls wasd-controls="false">
-    <!-- fuseTimeout = el temps que triga en fer click des de que es posiciona sobre un objecte-->
      <a-entity cursor="fuse: true; fuseTimeout: 2000"
            position="10 0 -1"
            geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
@@ -45,10 +43,10 @@
       <!-- Calle -->
       <a-plane question="42" position=" 0.5 0.5 -30" src="#imgSortida" rotation="0 0 0"  transparent="true" ></a-plane>
       <!-- Cocina -->
-      <a-plane question="" position=" -2 0.5 -11" src="#imgSortida" rotation="0 75 0"  transparent="true" ></a-plane>
+      <a-plane question="59" position=" -2 0.5 -11" src="#imgSortida" rotation="0 75 0"  transparent="true" ></a-plane>
       <!-- Habitacion -->
-      <a-plane question="" position=" 0.1 0 31" src="#imgSortida" rotation="0 -180 0"  transparent="true" ></a-plane>
-
+      <a-plane question="58" position=" 0.1 0 31" src="#imgSortida" rotation="0 -180 0"  transparent="true" ></a-plane>
+      <a-entity id="sound" sound="src: #audio"></a-entity>
     </a-scene>
   </body>
 </html>

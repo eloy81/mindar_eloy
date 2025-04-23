@@ -1,0 +1,11 @@
+Model Information:
+* title:	Croissant
+* source:	https://sketchfab.com/3d-models/croissant-45ff3bd22e4e4dc98a6a177f5d18c047
+* author:	cicinha (https://sketchfab.com/cicinha)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Croissant" (https://sketchfab.com/3d-models/croissant-45ff3bd22e4e4dc98a6a177f5d18c047) by cicinha (https://sketchfab.com/cicinha) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -15,12 +15,13 @@
   <body>
   <a-scene cursor="rayOrigin: mouse">
     <a-assets>
-      <img id="imgSortida" src="/ex8/assets/entragroc.png" >
-      <img id="imgFantasma" src="/ex8/assets/fantasma.png" >
-      <img id="imgCasa" src="/ex8/assets/habitacion3.jpeg" >
-      <a-asset-item id="libro" src="/ex8/assets/libro/scene.gltf"></a-asset-item>
-      <a-asset-item id="libro2" src="/ex8/assets/libro_2/scene.gltf"></a-asset-item>
-      <a-asset-item id="oso" src="/ex8/assets/teddy/scene.gltf"></a-asset-item>
+      <img id="imgSortida" src="/assets/entragroc.png" >
+      <img id="imgFantasma" src="/assets/fantasma.png" >
+      <img id="imgCasa" src="/assets/habitacion3.jpeg" >
+      <a-asset-item id="libro" src="/assets/libro/scene.gltf"></a-asset-item>
+      <a-asset-item id="libro2" src="/assets/libro_2/scene.gltf"></a-asset-item>
+      <a-asset-item id="oso" src="/assets/teddy/scene.gltf"></a-asset-item>
+      <audio id="audio" src="/assets/habitacion.mp3"></audio>
     </a-assets>
    
     <a-entity camera look-controls wasd-controls="false">
@@ -44,3 +45,7 @@
     <a-entity question="38" gltf-model="#oso" position="2.6 -5 -6" rotation="0 -30 0" scale="0.03 0.03 0.03"></a-entity>
     <a-plane question="22" position="1 0 5" src="#imgSortida" rotation="0 -180 0" transparent="true">
     </a-plane>
+    <a-entity id="sound" sound="src: #audio"></a-entity>
+  </a-scene>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script>
+      AFRAME.registerComponent("redirect-on-animation-end", {
+        init: function () {
+          let el = this.el;
+          el.addEventListener("animationcomplete", () => {
+            window.location.href = "calle_lenta.html"; // Cambia la URL si lo deseas
+          });
+        },
+      });
+    </script>
+    <script src="https://castelletm12b.cat/build/assets/question.js" defer></script>
+  </head>
+
+  <body>
+    <a-scene cursor="rayOrigin: mouse">
+      <!-- Assets -->
+      <a-assets>
+        <img id="imgSortida" src="/assets/entragroc.png" />
+        <img id="imgFantasma" src="/assets/fantasma.png" />
+        <img id="imgCasa" src="/assets/calle.jpg" />
+        <audio id="audio2" src="/assets/avion.mp3"></audio>
+        <audio id="audio" src="/assets/tension.mp3"></audio>
+        <a-asset-item id="avion" src="/assets/avion/scene.gltf"></a-asset-item>
+      </a-assets>
+
+      <!-- Cielo -->
+      <a-sky src="#imgCasa"></a-sky>
+
+      <!-- Cámara con cursor -->
+      <a-entity camera look-controls wasd-controls="false" position="0 1.6 0">
+        <a-entity cursor="fuse: true; fuseTimeout: 2000"
+                  position="0 0 -1"
+                  material="color: red; shader: flat"
+                  animation="property: components.material.material.color;
+                             type: color;
+                             to: white;
+                             dur: 1000;
+                             dir: alternate;
+                             loop: true">
+        </a-entity>
+      </a-entity>
+
+      <!-- Modelo del avión con animación y redirección al finalizar -->
+      <a-entity gltf-model="#avion"
+                position="1 1 -5"
+                rotation="0 180 0"
+                scale="0.02 0.02 0.02"
+                animation="property: position; dur: 8000; from: -30 1 -270; to: 0 -2 -6; dir: alternate"
+                redirect-on-animation-end
+                question="85">
+      </a-entity>
+
+      <!-- Botón de salida -->
+      <a-entity id="sound1" sound="src: #audio2"></a-entity>
+      <a-entity id="sound" sound="src: #audio"></a-entity>
+      <a-plane question="16" position="31 1 -6" src="#imgSortida" rotation="0 -90 0" transparent="true" mylink="href: /index.html"></a-plane>
+    </a-scene>
+  </body>
+</html>

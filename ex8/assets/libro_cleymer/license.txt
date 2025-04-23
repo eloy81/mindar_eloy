@@ -1,0 +1,11 @@
+Model Information:
+* title:	Libro Cleymer
+* source:	https://sketchfab.com/3d-models/libro-cleymer-4eced662fd5543f6935dec9655aaf288
+* author:	czavala (https://sketchfab.com/czavala)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Libro Cleymer" (https://sketchfab.com/3d-models/libro-cleymer-4eced662fd5543f6935dec9655aaf288) by czavala (https://sketchfab.com/czavala) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

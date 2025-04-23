@@ -17,10 +17,12 @@
   <body>
   <a-scene cursor="rayOrigin: mouse">
     <a-assets>
-      <img id="imgSortida" src="/ex8/assets/entragroc.png" >
-      <img id="imgFantasma" src="/ex8/assets/fantasma.png" >
-      <img id="imgCasa" src="/ex8/assets/cocina2.jpeg" >
-      <!--<a-asset-item id="dracula" src="/ex8/assets/dracula/scene.gltf"></a-asset-item>-->
+      <img id="imgSortida" src="/assets/entragroc.png" >
+      <img id="imgFantasma" src="/assets/fantasma.png" >
+      <img id="imgCasa" src="/assets/cocina2.jpeg" >
+      <a-asset-item id="ous" src="/assets/cheese/scene.gltf"></a-asset-item>
+      <a-asset-item id="cru" src="/assets/croissant/scene.gltf"></a-asset-item>
+      <audio id="audio" src="/assets/cocina.mp3"></audio>
     </a-assets>
    
     <a-entity camera look-controls wasd-controls="false">
@@ -36,13 +38,13 @@
                  dir: alternate;
                  loop: true">
      </a-entity>
+    
     </a-entity>
-      <a-sky src="#imgCasa"></a-sky>
-      <a-sphere position="5 2 -5" radius="1"  src="#imgFantasma"
-                animation="property: rotation; dur: 2000;
-                       to: 0 360 0; loop: true">          
-      </a-sphere>
+      <a-sky src="#imgCasa"></a-sky>       
+      <a-entity question="68" gltf-model="#ous" position="-6 -2 -1" rotation="180 97 0" scale="0.5 0.5 0.5"></a-entity>
+      <a-entity question="67" gltf-model="#cru" position="-2 -3 6" rotation="0 160 0" scale="0.2 0.2 0.2"></a-entity>
       <a-plane question="60" position=" 5 0 -3" src="#imgSortida" rotation="180 90 0"  transparent="true"></a-plane>
+      <a-entity id="sound" sound="src: #audio"></a-entity>
     </a-scene>
   </body>
 </html>
